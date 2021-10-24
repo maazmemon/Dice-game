@@ -2,11 +2,13 @@ var randomnumber = Math.floor(Math.random()*6)+1;
 
 var randomdiceimage = 'dice'+ randomnumber + ".png";
 
-var randomsourceimage = "assets/"+ randomdiceimage;
+var randomsourceimage = "assets/"+ randomdiceimage + '';
 
 var image1 = document.querySelectorAll("img")[0];
 
 image1.setAttribute("src",randomsourceimage);
+
+
 
 
 
@@ -30,3 +32,5 @@ else if (randomnumber < randomnumber1){
  else {
     document.querySelector("h1").innerHTML = ' 😢 GAME IS DRAW'
  }
+
+ 
